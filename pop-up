@@ -1,0 +1,53 @@
+ // JavaScript สำหรับเปิด Pop-up โดยอัตโนมัติ
+ window.onload = function() {
+    openPopup();
+};
+
+// JavaScript สำหรับเปิด Pop-up
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+// JavaScript สำหรับปิด Pop-up
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+} 
+css 
+.popup-container {
+            display: none; /* เริ่มต้นซ่อน Pop-up */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* สีพื้นหลังสำหรับเงาหลัง Pop-up */
+            z-index: 999; /* ระดับความสูงเพื่อแสดงเหนือเนื้อหาหลัก */
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* CSS สำหรับปุ่มปิด Pop-up */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        } 
+        html 
+          <!-- Pop-up Container -->
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&#10006;</span> <!-- ปุ่มปิด Pop-up -->
+            <h2>อุ้ม</h2>
+            <p>นี่คือเนื้อหา ผีหลอกวิญญาณหลอน</p>
+            <img src="popup.jpg" alt="รูปภาพ" width="200" height="150">
+        </div>
