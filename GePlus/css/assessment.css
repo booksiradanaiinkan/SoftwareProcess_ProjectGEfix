@@ -82,7 +82,7 @@
 #assessmentPopup .popup-content-left {
     display: flex;
     flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
-    align-items: center; /* จัดให้อยู่ด้านขวา */
+    align-items: center; 
     float: left;
     width: 50%;
     height: 100%;
@@ -92,8 +92,14 @@
     width: 80%;
 }
 #assessmentPopup .popup-content-right {
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center; 
     float: right;
     width: 50%;
     height: 100%;
+}
+.popup-content-right p {
+    padding: 10px;
 }
 
