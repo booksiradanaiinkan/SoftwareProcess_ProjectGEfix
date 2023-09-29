@@ -1,48 +1,117 @@
- 
-/* กำหนด grid container */
- .grid-container {
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 1200px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 500px; /* ปรับความสูงตามที่คุณต้องการ */
+}
+
+/* CSS สำหรับปุ่มปิด Pop-up */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+} 
+.container-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* แบ่งเป็นสองคอลัมน์ทางซ้ายและขวา */
-    grid-gap: 20px; /* ระยะห่างระหว่าง grid items */
-  }
+    grid-template-columns: 1fr 1fr; /* แบ่งเป็นสองคอลัมน์เท่ากัน */
+    grid-gap: 20px; /* ระยะห่างระหว่าง Grid Items */
+}
 
-  /* สไตล์ของ text-block */
-  .text-block {
+/* CSS สำหรับ Container 1 */
+.container1 {
     background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #fff7f7;
-  }
+    padding: 1;
+    border-radius: 100px;
+    position: center;
+}
 
-  /* สไตล์ของ video-container */
-  .video-container {
+/* CSS สำหรับ Container 2 */
+.container2 {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CSS สำหรับ Content 1 และ Content 2 */
+.content {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.video-container {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-  }
+}
 
-  .video-container iframe {
+.video-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  } 
-   /* สไตล์ของ text-block */
-   .text-block {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
+    top: 100;
+    left: 100;
+    width: 80%;
+    height: 80%; 
+    border-radius: 20px;
+} 
+ /* CSS สำหรับ Grid Container */
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* แบ่งเป็น 3 คอลัมน์เท่ากัน */
+    grid-gap: 20px; /* ระยะห่างระหว่าง block images */
+}
 
-  /* สไตล์ของ image-container */
-  .image-container {
+/* CSS สำหรับ block images */
+.image-block {
+    width: 100%; /* ขนาดกว้างของแต่ละ block */
+    background-color: rgb(255, 255, 255);
     text-align: center;
+     /* ทำให้เป็นสี่เหลี่ยมจตุรัส */
+     aspect-ratio: 1;
+}
+
+/* CSS สำหรับรูปภาพ */
+.image {
+    width: 380px;
+    height: 380px;
+    margin: 0 center;
+    border-radius: 20px;
+} 
+    h1 {
+    /* สไตล์ที่คุณต้องการใส่ตัวอักษร */
+    color: rgb(175, 3, 175); /* ตัวอักษรสีแดง */
+    font-size: 40px; /* ขนาดตัวอักษร 24px */
+    font-weight: bold; /* ตัวอักษรหนา */
+} 
+img {
+    width: 380px;
+    height: 380px;
+    transition: transform 0.5s ease;
   }
 
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-  }
+  /* การเพิ่มส่วนขยายเมื่อเมาส์ชี้ไปที่รูปภาพ */
+  img:hover {
+    transform: scale(0.7); /* เพิ่มความขยาย 1.2 เท่า */
+  } 
+  p {
+    color: black; 
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; /* กำหนดระยะห่างระหว่างบรรทัดให้มีความสูงเท่ากับ 1.5 เท่าของขนาดฟอนต์ */
+    margin-bottom: 20px; /* กำหนดระยะห่างด้านล่างของบรรทัดให้เป็น 10px */
+    padding-bottom: 20px; /* กำหนดพื้นที่ว่างด้านล่างของบรรทัดให้เป็น 10px */
+} 
+  h2 {
+    color: blueviolet; 
+    font-size: 27;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
