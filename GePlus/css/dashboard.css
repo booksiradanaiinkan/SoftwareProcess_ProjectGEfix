@@ -1,5 +1,4 @@
-
-.popup-content {
+.dashboardContent .popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,7 +12,7 @@
 }
 
 /* CSS สำหรับปุ่มปิด Pop-up */
-.close-button {
+.dashboardContent .close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -40,7 +39,7 @@
 }
 
 /* CSS สำหรับ Content 1 และ Content 2 */
-.content {
+.container2 .content,.container1 .content{
     padding: 10px;
     background-color: white;
     border-radius: 5px;
@@ -70,7 +69,7 @@
 }
 
 /* CSS สำหรับ block images */
-.image-block {
+.grid-container .image-block {
     width: 100%; /* ขนาดกว้างของแต่ละ block */
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -79,29 +78,29 @@
 }
 
 /* CSS สำหรับรูปภาพ */
-.image {
+.grid-container .image {
     width: 380px;
     height: 380px;
     margin: 0 center;
     border-radius: 20px;
 } 
-    h1 {
+.dashboardContent h1 {
     /* สไตล์ที่คุณต้องการใส่ตัวอักษร */
     color: rgb(175, 3, 175); /* ตัวอักษรสีแดง */
     font-size: 40px; /* ขนาดตัวอักษร 24px */
     font-weight: bold; /* ตัวอักษรหนา */
 } 
-img {
+.dashboardContent img {
     width: 380px;
     height: 380px;
     transition: transform 0.5s ease;
   }
 
   /* การเพิ่มส่วนขยายเมื่อเมาส์ชี้ไปที่รูปภาพ */
-  img:hover {
+.dashboardContent  img:hover {
     transform: scale(0.7); /* เพิ่มความขยาย 1.2 เท่า */
   } 
-  p {
+.dashboardContent p {
     color: black; 
     font-size: 20px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,7 +108,7 @@ img {
     margin-bottom: 20px; /* กำหนดระยะห่างด้านล่างของบรรทัดให้เป็น 10px */
     padding-bottom: 20px; /* กำหนดพื้นที่ว่างด้านล่างของบรรทัดให้เป็น 10px */
 } 
-  h2 {
+.dashboardContent h2 {
     color: blueviolet; 
     font-size: 27;
     font-family: Arial, Helvetica, sans-serif;
