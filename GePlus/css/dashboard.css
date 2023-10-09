@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: rgb(165, 4, 205);
     padding: 50px;
     border-radius: 20px;
     text-align: center;
@@ -11,12 +11,19 @@
     height: 500px; /* ปรับความสูงตามที่คุณต้องการ */
 }
 
+.dashboardContent .popup-content img {
+    width: 100%; /* กำหนดให้รูปภาพเต็มพื้นที่ของ pop-up */
+    height: 100%; /* กำหนดให้รูปภาพเต็มพื้นที่ของ pop-up */
+    border-radius: 20px;
+}
 /* CSS สำหรับปุ่มปิด Pop-up */
 .dashboardContent .close-button {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
+    font-size: 73; 
+    color: #ffffff;
 } 
 .container-wrapper {
     display: grid;
@@ -102,7 +109,7 @@
   } 
 .dashboardContent p {
     color: black; 
-    font-size: 20px; 
+    font-size:14px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5; /* กำหนดระยะห่างระหว่างบรรทัดให้มีความสูงเท่ากับ 1.5 เท่าของขนาดฟอนต์ */
     margin-bottom: 20px; /* กำหนดระยะห่างด้านล่างของบรรทัดให้เป็น 10px */
@@ -113,4 +120,25 @@
     font-size: 27;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+}   
+/* styles.css */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}  
+.dashboardContent h3 {
+    /* สไตล์ที่คุณต้องการใส่ตัวอักษร */
+    color: rgb(0, 0, 0); /* ตัวอักษรสีแดง */
+    font-size: 20px; /* ขนาดตัวอักษร 24px */
+    font-weight: bold; /* ตัวอักษรหนา */ 
 }
